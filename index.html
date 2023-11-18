@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">SURVEY FORM FOR NSPs</h1>
+  <p id="description">A survey form for National Service Personnels in CTVET</p>
+  <form id ="survey-form">
+    <label for = "name" id ="name-label">Enter your name here <input type="text" id ="name" placeholder="your name"required>
+    <label for = "email" id="email-label">Enter your Email here <input type="email" id ="email" placeholder="your email"required>
+    <label for = "number" id = "number-label">How old are you <input type="number" id ="number" min="5" max ="15" placeholder="your number"> 
+    <label for ="dropdown" id="dropdown-label">Choose your qualification level <select id = "dropdown">
+        <option>Bachelors</option>
+        <option>HnD</option>
+    </select>
+    </label>
+    <label for ="uni" id ="uni-label">What type of University did you graduate?</label>
+    <label><input type="radio" name ="uni" value ="1">Traditional Universities<input type="radio" name ="uni" value ="2">Technical Universities</label>
+    <label>Choose from the list your acquired certs</label>
+    <input type="checkbox" value="shs">SHS
+    <input type="checkbox" value="jhs">JHS
+    <input type="checkbox" value="basic">Basic Education
+    <label for ="about" id ="about-label">Write a little about yourself <textarea id ="about"></textarea></label>
+     <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
